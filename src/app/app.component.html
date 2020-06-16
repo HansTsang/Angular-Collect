@@ -1,0 +1,8 @@
+<app-input [(data)]="inputValue" placeholder="请输入品规">
+  <i class="fa fa-camera fa-lg"></i>
+</app-input>
+<app-zg-input placeholder="请输入内容" [addSuffix]="true" [(zgModel)]="zg" (suffixClick)="onSuffixClick($event)">
+  <i class="fa fa-camera fa-lg"></i>
+</app-zg-input>
+<h3>zg:{{zg}}</h3>
+<router-outlet></router-outlet>

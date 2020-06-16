@@ -1,0 +1,24 @@
+.hollow-two-circles {
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background: radial-gradient(circle at right bottom, transparent 10px, #eeeeee 0) top right / 51% 30% no-repeat,
+        radial-gradient(circle at left bottom, transparent 10px, #eeeeee 0) top left / 51% 30% no-repeat,
+        radial-gradient(circle at right top, transparent 10px, #eeeeee 0) bottom right / 51% 70% no-repeat,
+        radial-gradient(circle at left top, transparent 10px, #eeeeee 0) bottom left / 51% 70% no-repeat;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.hollow-two-circles::after {
+    content: "";
+    width: 277px;
+    border: 1px dashed #ff5722;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+}

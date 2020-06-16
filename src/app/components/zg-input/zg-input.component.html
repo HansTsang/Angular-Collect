@@ -1,0 +1,7 @@
+<div class="zg-input-group">
+    <input class="zg-input" [placeholder]="placeholder" [(ngModel)]="zgModel"
+        (ngModelChange)="zgModelChange.emit(zgModel)">
+    <span class="input-scan_suffix" *ngIf="addSuffix" (click)="onclick()">
+        <ng-content select="i.fa"></ng-content>
+    </span>
+</div>

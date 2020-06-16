@@ -1,0 +1,9 @@
+<div class="input-scan">
+    <input class="input-scan_inner" [placeholder]="placeholder" [(ngModel)]="innerValue"
+        (ngModelChange)="handleNgModelChange(innerValue)">
+    <span class="input-scan_suffix">
+        <span class="input-scan_suffix-inner">
+            <ng-content select="i.fa"></ng-content>
+        </span>
+    </span>
+</div>
